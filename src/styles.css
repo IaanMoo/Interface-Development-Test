@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../assets/OpenSans/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../assets/OpenSans/OpenSans-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0E1414;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 185px 0;
+}
+
+.column {
+    max-width: 384px;
+    max-height: 600px;
+    margin: 0 12px;
+}
+
+.item {
+    margin-bottom: 16px;
+    color: white;
+}
+
+.primary-header {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'OpenSans-Light';
+    border-bottom: 1px solid white;
+    padding-bottom: 13px;
+    font-weight: lighter;
+    text-shadow: none;
+    letter-spacing: 1px;
+}
+
+.primary-description {
+    margin-top: 30px;
+    font-size: 15.7px;
+    font-family: 'OpenSans-Light';
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 1.9;
+}
+
+.sub-header {
+    margin-top: 47px;
+    color: #D9183B;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'OpenSans-Regular';
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.sub-description {
+    font-size: 16.5px;
+    font-family: 'OpenSans-Regular';
+    font-weight: Bold;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        margin: 0 0;
+        display: block;
+        width: 100%;
+    }
+
+    .column {
+        margin: 20px auto;
+        width: 384px;
+        text-align: center;
+    }
+}
